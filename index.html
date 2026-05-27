@@ -3,51 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Anyelo Casas</title>
+    <title>Portafolio Fotográfico | Anyelo Esteban Casas Zapata</title>
     <style>
         :root {
-            --bg: #0d1117;
-            --accent: #58a6ff; /* Azul GitHub profesional */
-            --text: #c9d1d9;
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #bb86fc;
+            --card-bg: #1e1e1e;
         }
         body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
         }
-        .container {
+        header {
             text-align: center;
-            padding: 2rem;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            background: #161b22;
+            margin-bottom: 50px;
         }
-        h1 { margin-bottom: 0.5rem; letter-spacing: -1px; }
-        p { color: #8b949e; margin-bottom: 2rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--accent-color); }
+        .info { color: #a0a0a0; font-size: 1.1rem; }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--accent-color);
+        }
         .btn {
             display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--accent);
-            color: white;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: var(--accent-color);
+            color: #000;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: opacity 0.2s;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s;
         }
-        .btn:hover { opacity: 0.8; }
+        .btn:hover { transform: scale(1.05); }
     </style>
 </head>
 <body>
+
+    <header>
+        <h1>Anyelo Esteban Casas Zapata</h1>
+        <p class="info">Ingeniería de Sistemas | Universidad Distrital Francisco José de Caldas</p>
+        <p class="info">Proyecto Final de Fotografía | Grupo 020-81</p>
+    </header>
+
     <div class="container">
-        <h1>Anyelo Casas</h1>
-        <p>Proyecto Final de Fotografía - Tercer Corte</p>
-        <a href="PortafolioFinal_AnyeloCasas.pdf" class="btn">Ver Proyecto Completo (PDF)</a>
+        <div class="section">
+            <h2>Bogotá bajo la lluvia</h2>
+            <p>Serie documental que explora el movimiento urbano, el agua como presencia activa y la mirada a ras de calle desde la bicicleta. Documentación de la ciudad que sigue su curso bajo la tormenta.</p>
+        </div>
+
+        <div class="section">
+            <h2>Alquimia Orgánica</h2>
+            <p>Estudio de la materia prima, formas botánicas y texturas. Un análisis técnico sobre la luz, la atmósfera "low key" y el control del detalle matérico.</p>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="PortafolioFinal_AnyeloCasas.pdf" class="btn" target="_blank">DESCARGAR PORTAFOLIO COMPLETO (PDF)</a>
+        </div>
     </div>
+
 </body>
 </html>
