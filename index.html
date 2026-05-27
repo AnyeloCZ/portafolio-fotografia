@@ -3,77 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Fotográfico | Anyelo Esteban Casas Zapata</title>
+    <title>Portafolio | Anyelo Esteban Casas Zapata</title>
     <style>
         :root {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --accent-color: #bb86fc;
-            --card-bg: #1e1e1e;
+            --bg-color: #050a14; /* Azul muy oscuro casi negro */
+            --text-color: #d1d9e6;
+            --accent-color: #2b6cb0; /* Azul profesional */
+            --card-bg: #0d1a2d;
         }
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, sans-serif;
             margin: 0;
             padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--accent-color); }
-        .info { color: #a0a0a0; font-size: 1.1rem; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 2.2rem; margin-bottom: 10px; color: #ffffff; }
+        .info { color: var(--accent-color); font-weight: bold; }
         
-        .container {
-            max-width: 800px;
-            width: 100%;
-        }
+        .container { max-width: 800px; width: 100%; }
         .section {
             background: var(--card-bg);
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 10px;
             margin-bottom: 30px;
-            border-left: 5px solid var(--accent-color);
+            border-left: 4px solid var(--accent-color);
         }
+        h2 { color: var(--accent-color); margin-top: 0; }
+        
         .btn {
             display: inline-block;
             margin-top: 20px;
             padding: 15px 30px;
             background-color: var(--accent-color);
-            color: #000;
+            color: white;
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
-            transition: transform 0.2s;
+            transition: 0.3s;
         }
-        .btn:hover { transform: scale(1.05); }
+        .btn:hover { background-color: #1a4a80; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Anyelo Esteban Casas Zapata</h1>
-        <p class="info">Ingeniería de Sistemas | Universidad Distrital Francisco José de Caldas</p>
-        <p class="info">Proyecto Final de Fotografía | Grupo 020-81</p>
+        <p class="info">Proyecto Final - Fotografía | Semestre 2026-I</p>
     </header>
 
     <div class="container">
         <div class="section">
-            <h2>Bogotá bajo la lluvia</h2>
+            <h2>Proyecto Autoral: Bogotá bajo la lluvia</h2>
             <p>Serie documental que explora el movimiento urbano, el agua como presencia activa y la mirada a ras de calle desde la bicicleta. Documentación de la ciudad que sigue su curso bajo la tormenta.</p>
         </div>
 
         <div class="section">
-            <h2>Alquimia Orgánica</h2>
-            <p>Estudio de la materia prima, formas botánicas y texturas. Un análisis técnico sobre la luz, la atmósfera "low key" y el control del detalle matérico.</p>
+            <h2>Portafolio Semestral</h2>
+            <p>Recopilación de los trabajos desarrollados durante el curso de fotografía este semestre. Contiene las entregas del primer y segundo corte, consolidando la evolución técnica y la búsqueda visual realizada en clase.</p>
         </div>
 
         <div style="text-align: center;">
-            <a href="PortafolioFinal_AnyeloCasas.pdf" class="btn" target="_blank">DESCARGAR PORTAFOLIO COMPLETO (PDF)</a>
+            <a href="PortafolioFinal_AnyeloCasas.pdf" class="btn" target="_blank">DESCARGAR DOCUMENTO FINAL (PDF)</a>
         </div>
     </div>
 
